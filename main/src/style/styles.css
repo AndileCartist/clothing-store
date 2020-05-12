@@ -285,7 +285,7 @@ nav > ul {
         background: whitesmoke;
         background: -webkit-linear-gradient(to right, #c7c7c7, #fcfcfc);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #c7c7c7, #fcfcfc);
-        min-height: 170px;
+        min-height: 320px;
     }
     .active {
         background: blue;
@@ -298,7 +298,8 @@ nav > ul {
     }
     .tab-pane {
         color: #333333;
-        background: #3498db;
+        background: -webkit-linear-gradient(to right, #c7c7c7, #fcfcfc);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #c7c7c7, #fcfcfc);    
         min-height: 170px;
         position: relative;
         z-index: 100;
@@ -311,20 +312,23 @@ nav > ul {
       [data-component="slideshow"] .slide {
         display: none;
         text-align: center;
+
+      }
+      [data-component="slideshow"] {
         position: relative;
-        top: -169px;
+        top: -319px;
       }
       
       [data-component="slideshow"] .slide.current-slide {
         display: block;
       }
 
-
+/*           CARD                       */
       
 .wrap {
 	display: -webkit-box;
 	display: -ms-flexbox;
-	display: flex;
+    display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	-webkit-box-pack: center;
@@ -340,54 +344,98 @@ nav > ul {
 }
 
 .card-box {
-	margin: 10px;
+	margin: 0 10px;
 	width: 250px;
-	height: 350px;
-	text-align: center;
+    height: 320px;
+    text-align: center;
 	border-radius: 3px;
 	-webkit-transition: 200ms ease-in-out;
 	-o-transition: 200ms ease-in-out;
 	transition: 200ms ease-in-out;
 	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3);
-	        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 .card-box:hover {
-	margin-bottom: -10px;
+/*	margin-bottom: -10px;    */
 	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.7);
-	        box-shadow: 0 0 5px rgba(0,0,0,0.7);
+    box-shadow: 0 0 5px rgba(0,0,0,0.7);         
 }
 .card-box h4 {
 	color: #fff;
-	padding: 30px;
-	margin-top: 100px;
+	padding: 23px 30px 0 30px;
+	margin-top: 178px;
 	text-align: center;
 	font-weight: 100;
 	font-size: 25px;
-	background: rgba(0,0,0,0.8);
+	background: rgba(0,0,0,0.7);
 	-webkit-box-shadow: 0 0 30px rgba(0,0,0,0.7);
-	        box-shadow: 0 0 30px rgba(0,0,0,0.8);
+    box-shadow: 0 0 30px rgba(0,0,0,0.8);
+    margin-bottom: 0px;
+}
+.card-box h2 {
+    color: #fff;
+    padding: 10px 10px 0 10px;
+	text-align: center;
+	font-weight: 100;
+	font-size: 17px;
+	background: rgba(0,0,0,0.7);
+	-webkit-box-shadow: 0 0 30px rgba(0,0,0,0.7);
+    box-shadow: 0 0 30px rgba(0,0,0,0.8);
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.card-buttons {
+    height: 60px;
+    background: #3498db;
+}
+.nav-links-con {
+    height: 320px;
+    width: 300px;
+    background: #3498db;
+
 }
 
 .nav-card-one {
-	background: url('https://source.unsplash.com/900x920');
+    background: url('https://source.unsplash.com/900x920');
+    background: url('https://p7.hiclipart.com/preview/649/950/334/hoodie-t-shirt-air-jordan-nike-sweater-all-around.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
 .nav-card-two {
-	background: url('https://source.unsplash.com/820x900');
+	background: url('https://cdn11.bigcommerce.com/s-mf8nk5mp4s/images/stencil/1280x1280/products/5610/6708/ci7910-620a1__96321.1563466131.jpg?c=2&imbypass=on');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 .nav-card-three {
-	background: url('https://source.unsplash.com/500x500');
+    /*background: url('https://source.unsplash.com/900x920');*/
+    background: url('https://cdn.shopify.com/s/files/1/2380/9241/products/product-image-376479900_800x.jpg?v=1536755011');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.nav-card-four {
+    background: url('https://www.dhresource.com/0x0/f2/albu/g6/M01/65/77/rBVaSFt-FWGALbgjAAD9oFFFv4Q903.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
+.nav-card-five {
+	background: url('https://img2.wantitall.co.za/prodimages/ghazzi-women-dresses-vintage-printed-long-sleeve-party-prom-midi-dress-cocktail-evening-swing-dress__41zJmbQ670L.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.nav-card-six {
+    /*background: url('https://source.unsplash.com/900x920');*/
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSrYKv3vfgqsgeKE03oh5qT-QwX5X5xnFFLt4hnI5cEI6J_OqrO&usqp=CAU');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
 
     .content {
     grid-area: content;
